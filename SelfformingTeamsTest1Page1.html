@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <title>Protolab</title>
+   
+ 
+<style>
+body{
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+}
+#JustinBox{
+    overflow: hidden;
+    white-space: nowrap; 
+    border-style: double;
+    display: inline-block;
+    float: right;   
+}
+p{
+  font-size: 105%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#second
+{
+  border-style: solid;
+}
+#demo
+{
+  border-style: solid;
+}
+.tab{
+ padding-left: 5em;
+
+}
+</style>
+ </head>  <body>
+    <div class="row">    
+  
+   
+    <div id="JustinBox">
+         <p>Time Left: <span id="time">01:00</span> minutes!</p> 
+    </div>
+
+</br>
+</br>
+
+<div id="demo">
+     <b><center><h3>
+    <u>Task</u></h3></center></br></b>
+
+  <p>
+    <u><b>Write a television advertisement for the transportation device you described in the earlier task.</b></u></br>     
+- the television advertisement should be 30 seconds </br>
+- it should highlight the product's main benefits and ultimately persuade people to buy it </br>
+- you can make up a new name and invent realistic features that it should have </br></br>
+
+<b>You have 1:00 minute </b> to read these directions before you're automatically moved to the next section. Scroll to the bottom of the page to see all of the directions and the photo. </br> </br>
+
+<u><b>Sample advertisement</b></u> </br>
+<div class="tab">
+Television advertisement for a new type of beverage: </br></br>
+"Scopa: Live life, one bean at a time A rugged man is free-climbing up Puncak Jaya, the highest mountain in New Guinea. He climbs effortlessly and quickly reaches the summit. Once at the top he takes a moment to admire the view surrounded by clouds and then removes a flask from his backpack, swiftly pouring a brown liquid into the cup of the flask. Last, the scene cuts to a blank screen with writing saying: “2 beans, 2 sides, which side will you be today?”
+</div>
+
+
+  </p>
+
+<div align="center">
+<img src="http://www.electricvelocity.com.au/Upload/Blogs/smart-e-bike-side_2.jpg" alt="smart eBike" style="width: 800px; height: 530px;"></div></br>
+
+</div>
+
+
+
+
+    <script>
+    function startTimer(duration, display) {
+   var timer = duration, minutes, seconds;
+   setInterval(function () {
+       minutes = parseInt(timer / 60, 10)
+       seconds = parseInt(timer % 60, 10);        minutes = minutes < 10 ? "0" + minutes : minutes;
+       seconds = seconds < 10 ? "0" + seconds : seconds;        display.textContent = minutes + ":" + seconds;        if (--timer < 0) {
+            window.location.href="http://protolab.herokuapp.com/SelfformingTeamsTest1Page2.php";
+       }
+                }, 1000);
+        }    window.onload = function () {
+        var eightMinutes = 60 * 1.0,
+            display = document.querySelector('#time');
+        startTimer(eightMinutes, display);
+            };
+            
+        
+ </script>
+ 
+
+  
+    
+    
+    
+    
+ </body>
+</html> 

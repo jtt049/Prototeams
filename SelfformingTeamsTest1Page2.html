@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <title>Protolab</title>
+   
+ 
+<style>
+body{
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+}
+#JustinBox{
+    overflow: hidden;
+    white-space: nowrap; 
+    border-style: double;
+    display: inline-block;
+    float: right;   
+}
+p{
+  font-size: 105%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#second
+{
+  border-style: solid;
+}
+#demo
+{
+  border-style: solid;
+}
+h4{
+  margin-left: 2%;
+}
+</style>
+ </head>  <body>
+    
+  
+   
+    <div id="JustinBox">
+         <p>Time Left: <span id="time">01:00</span> minutes!</p> 
+    </div>
+
+</br>
+</br>
+
+<div id="demo">
+     <b><p><center><h3>
+    <u>Teamwork Directions</u></h3></b></center></br></p>
+  <p><b>You have 1:00 minute </b>to read these directions before you're automatically moved to the first part of the task. There are 4 sections to the the task: work on each section in the appropriate area on the collaborative workspace. </br></br>
+Important:</br>
+<b>DO NOT COPY AN ADVERTISEMENT FROM ELSEWHERE ON WEB</br>
+DO NOT REFRESH YOUR WEBPAGE DURING THE TASK
+</b>
+</p>
+
+</br>
+
+  <h4><b>Part 1: FEATURE LIST</b></h4>
+  <ul>
+    <li><p><b>You have 2 minutes.</b> Write your name under “team member” at the top of the collaborative workspace.
+    </li></p>
+
+     <li><p><b>Introduce yourself to your teammate </b>by writing anywhere in the collaborative workspace.
+    </li></p>
+
+    <li><p>Read each other’s slogans written during the individual task.
+    </li></p>
+
+    <li><p><b>Write down </b>all your ideas for features of the transportation device <b>as a list. </b>Record them under “Part 1” heading of the collaborative workspace.
+
+    </li></p>
+  </ul>
+  </br>
+
+
+ <h4><b>Part 2: FEATURE SELECTION </b></h4>
+  <ul>
+    <li><p><b>You have 1.5 minutes. 
+    </li></p></b>
+     <li><p><b>As a team, select the best features you want to use for the advertisement. </b> Combine your ideas and build off each other. Discuss the merits of your individual ideas come up with ways to merge them.
+    </li></p>
+    <li><p>
+      Record the features under “Part 2” heading of the collaborative workspace.
+      </p></li>
+  </ul>
+  </br>
+
+ <h4><b>Part 3: WRITING ADVERTISEMENT</b></h4>
+  <ul>
+    <li><p><b>You have 5 minutes
+    </li></p></b>
+     <li><p>
+       <b>The television advertisement should have a description of the visuals of the advertisement and the action that is happening. </b> Feel free to add additional features, for example “voiceover”, “text on screen”, “speaking”, or “music”. See the sample advertisement under “Task” for an example.
+
+    </li></p>
+
+    <li><p> 
+    Write your advertisement <b>TOGETHER. Each teammate must contribute at least a third of the work</b> - in term of words, ideas, suggestions - we want to see you combining ideas in real time.
+
+    </li></p>
+
+     <li><p> 
+     Do the work under the “Part 3” heading of the collaborative workspace.
+    </li></p>
+  </ul>
+  </br>
+
+ <h4><b>Part 4: FINALZING ADVERTISEMENT </b></h4>
+  <ul>
+    <li><p><b>You have 1.5 minutes.
+    </li></p></b>
+     <li><p><b>Finalize your advertisement by editing what you've written.
+         </li></p></b>
+    <li><p><b>Paste the final version under the “Part 4” heading</b> of the collaborative workspace.
+    </li></p>
+   
+  </ul>
+  
+
+
+
+
+
+</div>
+
+
+
+
+    <script>
+    function startTimer(duration, display) {
+   var timer = duration, minutes, seconds;
+   setInterval(function () {
+       minutes = parseInt(timer / 60, 10)
+       seconds = parseInt(timer % 60, 10);        minutes = minutes < 10 ? "0" + minutes : minutes;
+       seconds = seconds < 10 ? "0" + seconds : seconds;        display.textContent = minutes + ":" + seconds;        if (--timer < 0) {
+            window.location.href="http://protolab.herokuapp.com/SelfformingTeamsTest1Page3.php";
+       }
+                }, 1000);
+        }    window.onload = function () {
+        var eightMinutes = 60 * 1.0,
+            display = document.querySelector('#time');
+        startTimer(eightMinutes, display);
+            };
+            
+        
+ </script>
+ 
+
+  
+    
+    
+    
+    
+ </body>
+</html> 
